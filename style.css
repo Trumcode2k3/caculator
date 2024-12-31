@@ -1,0 +1,98 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: hsl(0, 0%, 90%);
+}
+button {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: hsl(0, 0%, 30%);
+  color: white;
+  transition: 0.2s;
+}
+#keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 25px;
+}
+#caculator {
+  font-family: Arial;
+  background-color: hsl(0, 0%, 15%);
+  border-radius: 15px;
+  max-width: 510px;
+  overflow: hidden;
+}
+#display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+  z-index: 100;
+}
+button:hover {
+  opacity: 0.8;
+}
+button:active {
+  background-color: hsl(0, 0%, 20%);
+}
+button:first-child {
+  background-color: #aca9a9;
+}
+button:nth-child(2) {
+  background-color: #aca9a9;
+}
+button:nth-child(3) {
+  background-color: #aca9a9;
+}
+button:nth-child(4) {
+  background-color: rgba(255, 166, 0, 0.842);
+}
+button:nth-child(4):focus {
+  background-color: white;
+  color: orange;
+}
+button:nth-child(8) {
+  background-color: rgba(255, 166, 0, 0.842);
+}
+button:nth-child(8):focus {
+  background-color: white;
+  color: orange;
+}
+button:nth-child(12) {
+  background-color: rgba(255, 166, 0, 0.842);
+}
+button:nth-child(12):focus {
+  background-color: white;
+  color: orange;
+}
+button:nth-child(16) {
+  background-color: rgba(255, 166, 0, 0.842);
+}
+button:nth-child(16):focus {
+  background-color: white;
+  color: orange;
+}
+button:nth-child(17) {
+  grid-column: 1 / span 2;
+  width: calc(100%);
+  border-radius: 50px;
+}
+
+button:nth-child(19) {
+  background-color: rgba(255, 166, 0, 0.842);
+}
+button:nth-child(19):active {
+  background-color: hsla(39, 97%, 64%, 0.945);
+  opacity: 0.8;
+}
